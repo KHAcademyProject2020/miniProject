@@ -1,4 +1,4 @@
-package com.kh.project.mini.cafa.view;
+package com.kh.project.mini.cafe.view;
 
 import java.util.Scanner;
 
