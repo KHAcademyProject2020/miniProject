@@ -1,14 +1,14 @@
 # 미니 프로젝트
 
-## 주제: 커피 배달 & 주문 시스템
-## 팀명: 커피 깡
+> ## 주제: 커피 배달 & 주문 시스템
+> ## 팀명: 커피 깡
 
 - Language: Java
 - 팀원: <strong>이영실</storng> , 김수진 , 최은강
 
 <hr>
 
-## 팀원 작성 코드
+> ## 팀원 작성 코드
 
 - [이영실](./LYS)
 - [김수진](./KSJ)
@@ -17,49 +17,49 @@
 
 <hr>
 
-# MVC Pattern
+> # MVC Pattern
 
 ![](./readme_imgs/mvc_pattern.png)
 
 <hr>
 
-# Class Diagram
+> # Class Diagram
 
 ![](./readme_imgs/class_diagram.png)
 
 <hr>
 
-# GUI description
+> # GUI description
 
-1. 로그인 이전 GUI 화면
+### 1. 로그인 이전 GUI 화면
 
 ![](./readme_imgs/before_login.png)
 
-<br>
+<hr>
 
-2. 로그인 이전 에러메시지 GUI 화면
+### 2. 로그인 이전 에러메시지 GUI 화면
 
 
-<br>
+<hr>
 
-3. 로그인 이후 GUI 화면
+### 3. 로그인 이후 GUI 화면
 
 ![](./readme_imgs/after_login.png)
 
-<br>
+<hr>
 
-4. 주문하기 GUI 화면
+### 4. 주문하기 GUI 화면
 
 ![](./readme_imgs/ordermenu.png)
 
-<br>
+<hr>
 
-5. 마이페이지 조회 GUI 화면
+### 5. 마이페이지 조회 GUI 화면
 ![](./readme_imgs/mypage.png)
 
-<br>
+<hr>
 
-6. 주문내역 및 쿠폰 조회 GUI화면 & (비밀번호/ 이름 / 생일 / 주소) 변경 GUI 화면
+### 6. 주문내역 및 쿠폰 조회 GUI화면 & (비밀번호/ 이름 / 생일 / 주소) 변경 GUI 화면
 - 주문내역 및 쿠폰 조회
 
 
