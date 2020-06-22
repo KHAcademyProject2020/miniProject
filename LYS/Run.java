@@ -1,4 +1,4 @@
-package com.kh.project.mini.cafa.run;
+package com.kh.project.mini.cafe.run;
 
 import com.kh.project.mini.cafa.view.MemberMenu;
 
