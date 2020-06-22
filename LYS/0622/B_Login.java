@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 
 public class B_Login {
 	public void doLogin() {
-		JFrame frame = new JFrame("∑Œ±◊¿Œ");
+		JFrame frame = new JFrame("Î°úÍ∑∏Ïù∏");
 		
 		
 		JPanel panel = new JPanel();
@@ -24,7 +24,7 @@ public class B_Login {
 		panel.add(new JLabel("PW"));
 		panel.add(password);
 			
-		JButton btn = new JButton("∑Œ±◊¿Œ");
+		JButton btn = new JButton("Î°úÍ∑∏Ïù∏");
 		
 		frame.add(panel, BorderLayout.NORTH);
 		frame.add(btn,BorderLayout.SOUTH);
