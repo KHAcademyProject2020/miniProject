@@ -1,4 +1,4 @@
-package com.kh.project.mini.cafa.controller;
+package com.kh.project.mini.cafe.controller;
 
 import java.util.HashMap;
 import java.util.Iterator;
