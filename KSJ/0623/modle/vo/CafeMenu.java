@@ -1,8 +1,8 @@
-package com.kh.project.mini.cafe.view;
+package com.kh.project.mini.cafe.model.vo;
 
 import java.util.Scanner;
 
-public class CafeView {
+public class CafeMenu {
 	
 	
 	public void orderMenu() {
