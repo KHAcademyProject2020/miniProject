@@ -15,6 +15,11 @@
 - [최은강](./CEK)
 
 
+> ## 최종 코드
+
+- [ GUI - 알림메시지 ] (./CoffeeKKang/GUI_AlertMessage/)
+
+
 <hr>
 
 > # MVC Pattern
@@ -73,3 +78,26 @@
 
 
 - 주소 변경
+
+
+
+### 7. Dialog 메시지 - 알림 메시지(alert Messages)
+
+- JOptionPane 을 이용하여, 옵션에 따른 알림 메시지를 나타낸다.
+
+- 디저트 주문 확인 메시지 (김수진)
+
+![](./readme_imgs/alert_message/confirm_yes_no.png)
+
+
+<br>
+
+- 로그인 실패 메시지 (이영실)
+![](./readme_imgs/alert_message/)
+
+
+
+<br>
+
+- 마이 페이지 (최은강)
+
