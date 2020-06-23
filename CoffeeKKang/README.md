@@ -10,10 +10,10 @@
 <hr>
 
 # 로그인 실패 메시지 (이영실)
-![](../readme_imgs/alert_message/)
+![](../readme_imgs/alert_message/member_enroll_alert.png)
 
 
 <hr>
 
 # 마이 페이지 (최은강)
-![](../readme_imgs/alert_message/)
+![](../readme_imgs/alert_message/mypage_alert.png)
