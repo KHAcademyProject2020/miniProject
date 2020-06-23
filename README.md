@@ -14,11 +14,13 @@
 - [김수진](./KSJ)
 - [최은강](./CEK)
 
+<br>
 
 > ## 최종 코드
 
-- [ GUI - 알림메시지 ] (./CoffeeKKang/GUI_AlertMessage/)
+- [ GUI: 알림메시지 ](./CoffeeKKang/GUI_AlertMessage/)
 
+<br>
 
 <hr>
 
@@ -28,11 +30,15 @@
 
 <hr>
 
+<br>
+
 > # Class Diagram
 
 ![](./readme_imgs/class_diagram.png)
 
 <hr>
+
+<br>
 
 > # GUI description
 
