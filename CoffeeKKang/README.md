@@ -1,6 +1,6 @@
 # 커피깡 - 알림메시지(alert Messages)
 
-# 디저트 주문 확인 메시지 (김수진)
+> ## 디저트 주문 확인 메시지 (김수진)
 
 ![](../readme_imgs/alert_message/confirm_yes_no.png)
 
