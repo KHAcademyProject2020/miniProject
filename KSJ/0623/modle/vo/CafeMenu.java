@@ -1,8 +1,8 @@
-package com.kh.project.mini.cafe.modle.vo;
+package com.kh.project.mini.cafe.view;
 
 import java.util.Scanner;
 
-public class CafeMenu {
+public class CafeView {
 	
 	
 	public void orderMenu() {
@@ -12,27 +12,27 @@ public class CafeMenu {
 
 		int menuNum = 0;
 		do {
-			System.out.println("****** ÁÖ¹® ÇÏ±â ******");
-			System.out.println("¾î¶² ¸Ş´º¸¦ °í¸£½Ç·¡¿ä?");
+			System.out.println("****** ì£¼ë¬¸ í•˜ê¸° ******");
+			System.out.println("ì–´ë–¤ ë©”ë‰´ë¥¼ ê³ ë¥´ì‹¤ë˜ìš”?");
 			System.out.println("1. Drink");
 			System.out.println("2. Dessert");
-			System.out.println("3. ÀÌÀüÀ¸·Î");
-			System.out.println("4. Á¾·á");
-			//1.(È¸¿øÀÌ¸§)´Ô ¹«¾ùÀ» ÁÖ¹®ÇÏ½Ã°Ú½À´Ï±î?
-			//2.Ä¿ÇÇ
-			//3.µğÀúÆ®
-			//4."ÅÖ.." ÁÖ¹®ÇÑ ¸Ş´º°¡ ¾ø½À´Ï´Ù!
+			System.out.println("3. ì´ì „ìœ¼ë¡œ");
+			System.out.println("4. ì¢…ë£Œ");
+			//1.(íšŒì›ì´ë¦„)ë‹˜ ë¬´ì—‡ì„ ì£¼ë¬¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?
+			//2.ì»¤í”¼
+			//3.ë””ì €íŠ¸
+			//4."í…….." ì£¼ë¬¸í•œ ë©”ë‰´ê°€ ì—†ìŠµë‹ˆë‹¤!
 			
 			System.out.println();
-			System.out.print("¸Ş´º ¹øÈ£ ÀÔ·Â: ");
+			System.out.print("ë©”ë‰´ ë²ˆí˜¸ ì…ë ¥: ");
 			menuNum = Integer.parseInt(sc.nextLine());
 			
 			switch(menuNum) {
 			case 1: orderCoffee(); break;
 			case 2: orderDessert(); break;
 			case 3: return;
-			case 4: System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù."); break;
-			default: System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			case 4: System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤."); break;
+			default: System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 			}
 		}while(menuNum != 4);
 	}
@@ -42,6 +42,7 @@ public class CafeMenu {
 	public void orderCoffee() {
 	
 		int menuNum = 0;
+//		char menuNum = 0;
 		Scanner sc = new Scanner(System.in);
 		boolean coffee_bool = true;
 		boolean tea_bool = true;
@@ -50,7 +51,7 @@ public class CafeMenu {
 
 		
 		while(true) {
-			System.out.println("¹«½¼ Á¾·ù·Î ÇÏ½Ã°Ú½À´Ï±î?");
+			System.out.println("ë¬´ìŠ¨ ì¢…ë¥˜ë¡œ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
 			System.out.println("1. Coffee");
 			System.out.println("2. Tea");
 
@@ -58,117 +59,118 @@ public class CafeMenu {
 //			char menu = sc.next().charAt(0);
 			menuNum = Integer.parseInt(sc.nextLine());
 			
-			if(menuNum=='1') {
-				System.out.println("Coffee ¼±ÅÃ");
+			if(menuNum == 1) {
+				System.out.println("Coffee ì„ íƒ");
 				String coffee ="";
 				String sirup_ok = "";
 				String shot_ok = "";
 				
 				while(coffee_bool) {
 					coffee_bool = false;
-					System.out.println("¹«½¼Ä¿ÇÇ¸¦ µå½Ã°Ú½À´Ï±î?");
-					System.out.println("1. ¾Æ¸Ş¸®Ä«³ë");
-					System.out.println("2. Ä«Æä¶ó¶¼");
-					System.out.println("3. Ä«Æä¸ğÄ«");
-					System.out.println("4. ¹Ù´Ò¶ó¶ó¶¼");
-					System.out.println("5. Ä«¶ó¸á¸¶³¢¾ÆÅä");
+					System.out.println("ë¬´ìŠ¨ì»¤í”¼ë¥¼ ë“œì‹œê² ìŠµë‹ˆê¹Œ?");
+					System.out.println("1. ì•„ë©”ë¦¬ì¹´ë…¸");
+					System.out.println("2. ì¹´í˜ë¼ë–¼");
+					System.out.println("3. ì¹´í˜ëª¨ì¹´");
+					System.out.println("4. ë°”ë‹ë¼ë¼ë–¼");
+					System.out.println("5. ì¹´ë¼ë©œë§ˆë¼ì•„í† ");
 					
 					
-					char cf = sc.next().charAt(0);
+//					char cf = sc.next().charAt(0);
+					int cf = Integer.parseInt(sc.nextLine());
 					
-					if(cf == '1') {
-						coffee = "¾Æ¸Ş¸®Ä«³ë";
+					if(cf == 1) {
+						coffee = "ì•„ë©”ë¦¬ì¹´ë…¸";
 					}
-					else if(cf == '2') {
-						coffee = "Ä«Æä¶ó¶¼";
+					else if(cf == 2) {
+						coffee = "ì¹´í˜ë¼ë–¼";
 					}
-					else if(cf == '3') {
-						coffee = "Ä«Æä¸ğÄ«";
+					else if(cf == 3) {
+						coffee = "ì¹´í˜ëª¨ì¹´";
 					}
-					else if(cf == '4') {
-						coffee = "¹Ù´Ò¶ó¶ó¶¼";
+					else if(cf == 4) {
+						coffee = "ë°”ë‹ë¼ë¼ë–¼";
 					}
-					else if(cf == '5') {
-						coffee = "Ä«¶ó¸á¸¶³¢¾ÆÅä";
+					else if(cf == 5) {
+						coffee = "ì¹´ë¼ë©œë§ˆë¼ì•„í† ";
 					}
 					else {
-						System.out.println("1,2,3,4,5 Áß ´Ù½Ã ¼±ÅÃÇØÁÖ¼¼¿ä!");
+						System.out.println("1,2,3,4,5 ì¤‘ ë‹¤ì‹œ ì„ íƒí•´ì£¼ì„¸ìš”!");
 						coffee_bool = true;
 					}
-				}// coffee¼±ÅÃ while³¡
+				}// coffeeì„ íƒ whileë
 				
 				while(shot_bool) {
 					shot_bool = false;
-					System.out.println("¼¦ Ãß°¡ÇÏ½Ã°Ú½À´Ï±î? Y/N");
+					System.out.println("ìƒ· ì¶”ê°€í•˜ì‹œê² ìŠµë‹ˆê¹Œ? Y/N");
 					char shot = sc.next().charAt(0);
 					if(shot == 'y' || shot == 'Y') {
-						shot_ok="¼¦ Ãß°¡";
+						shot_ok="ìƒ· ì¶”ê°€";
 					}else if(shot == 'n' || shot == 'N') {
 						shot_ok="";
 					}else {
-						System.out.println("´Ù½Ã ¼±ÅÃÇØÁÖ¼¼¿ä!");
+						System.out.println("ë‹¤ì‹œ ì„ íƒí•´ì£¼ì„¸ìš”!");
 						shot_bool = true;
 					}
 					
-				}//¼¦Ãß°¡ while ³¡
+				}//ìƒ·ì¶”ê°€ while ë
 				
 				while(sirup_bool) {
 					sirup_bool = false;
 					
-					System.out.println("½Ã·´ Ãß°¡ÇÏ½Ã°Ú½À´Ï±î? Y/N");
+					System.out.println("ì‹œëŸ½ ì¶”ê°€í•˜ì‹œê² ìŠµë‹ˆê¹Œ? Y/N");
 					char sirup = sc.next().charAt(0);
 					if(sirup == 'y' || sirup == 'Y') {
-						sirup_ok="¼¦ Ãß°¡";
+						sirup_ok="ìƒ· ì¶”ê°€";
 					}else if(sirup == 'n' || sirup == 'N') {
 						sirup_ok="";
 					}else {
-						System.out.println("´Ù½Ã ¼±ÅÃÇØÁÖ¼¼¿ä!");
+						System.out.println("ë‹¤ì‹œ ì„ íƒí•´ì£¼ì„¸ìš”!");
 						sirup_bool = true;
 				}
-			}//½Ã·´¼±ÅÃ ³¡
+			}//ì‹œëŸ½ì„ íƒ ë
 			
-				System.out.println("ÁÖ¹®ÇÏ½Å À½·á´Â" + shot_ok + sirup_ok + coffee + "ÀÔ´Ï´Ù.");
+				System.out.println("ì£¼ë¬¸í•˜ì‹  ìŒë£ŒëŠ”" + shot_ok + sirup_ok + coffee + "ì…ë‹ˆë‹¤.");
 				break;
 			}
-			else if(menuNum == '2') {
+			else if(menuNum == 2) {
 				String tea = "";
 				while(tea_bool) {
 					tea_bool = false;
 				
 				while(true) {
-						System.out.println(" ¹«½¼ Â÷¸¦ µå½Ã°Ú½À´Ï±î? ");
-						System.out.println("1. ¾ó±×·¹ÀÌ");
-						System.out.println("2. Ä³¸ğ¸¶ÀÏ ");
-						System.out.println("3. ÆäÆÛ¹ÎÆ® ");
-						System.out.println("4. ³ìÂ÷");
+						System.out.println(" ë¬´ìŠ¨ ì°¨ë¥¼ ë“œì‹œê² ìŠµë‹ˆê¹Œ? ");
+						System.out.println("1. ì–¼ê·¸ë ˆì´");
+						System.out.println("2. ìºëª¨ë§ˆì¼ ");
+						System.out.println("3. í˜í¼ë¯¼íŠ¸ ");
+						System.out.println("4. ë…¹ì°¨");
 
 						System.out.println();
-						System.out.print("¸Ş´º ¹øÈ£ ÀÔ·Â : ");
+						System.out.print("ë©”ë‰´ ë²ˆí˜¸ ì…ë ¥ : ");
 						menuNum = Integer.parseInt(sc.nextLine());
 						
 						int cf = sc.nextInt();
 						
 						if(cf == 1) {
-							tea = "¾ó±×·¹ÀÌ";
+							tea = "ì–¼ê·¸ë ˆì´";
 						}
 						else if(cf == 2) {
-							tea = "Ä³¸ğ¸¶ÀÏ";
+							tea = "ìºëª¨ë§ˆì¼";
 						}
 						else if(cf == 3) {
-							tea = "ÆäÆÛ¹ÎÆ®";
+							tea = "í˜í¼ë¯¼íŠ¸";
 						}
 						else if(cf == 4) {
-							tea = "³ìÂ÷";
+							tea = "ë…¹ì°¨";
 						}
 						else {
-							System.out.println("Â÷ Á¾·ù¸¦ ´Ù½Ã ¼±ÅÃÇØÁÖ¼¼¿ä!");
+							System.out.println("ì°¨ ì¢…ë¥˜ë¥¼ ë‹¤ì‹œ ì„ íƒí•´ì£¼ì„¸ìš”!");
 							tea_bool = true;
 						}
-					}//Æ¼ ¼±ÅÃ ³¡
+					}//í‹° ì„ íƒ ë
 					
 				}
-				}//if¹® ³¡
-			} //while¹® ³¡
+				}//ifë¬¸ ë
+			} //whileë¬¸ ë
 	}
 
 			
@@ -182,89 +184,89 @@ public class CafeMenu {
 			boolean cake_bool = true;
 			boolean cookie_bool = true;
 			while(true) {
-			System.out.println("¹«½¼ Á¾·ù·Î ÇÏ½Ã°Ú½À´Ï±î?");
-			System.out.println("1. ÄÉÀÌÅ©");
-			System.out.println("2. ÄíÅ°");
+			System.out.println("ë¬´ìŠ¨ ì¢…ë¥˜ë¡œ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
+			System.out.println("1. ì¼€ì´í¬");
+			System.out.println("2. ì¿ í‚¤");
 			
 			System.out.println();
-			System.out.print("¸Ş´º ¹øÈ£ ÀÔ·Â : ");
+			System.out.print("ë©”ë‰´ ë²ˆí˜¸ ì…ë ¥ : ");
 			menuNum = Integer.parseInt(sc.nextLine());
 			
-			if(menuNum == '1') {
+			if(menuNum == 1) {
 				String cake = "";
 				while(cake_bool) {
 					cake_bool = false;
 				
 					while(true) {
-						System.out.println(" ¹«½¼ Á¾·ù·Î ÇÏ½Ã°Ú½À´Ï±î? ");
-						System.out.println("1. ÃÊÄİ¸´ÄÉÀÌÅ©");
-						System.out.println("2. Ä¡ÁîÄÉÀÌÅ© ");
-						System.out.println("3. Æ¼¶ó¹Ì¼öÄÉÀÌÅ© ");
-						System.out.println("4. ´ç±ÙÄÉÀÌÅ©");
+						System.out.println(" ë¬´ìŠ¨ ì¢…ë¥˜ë¡œ í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ");
+						System.out.println("1. ì´ˆì½œë¦¿ì¼€ì´í¬");
+						System.out.println("2. ì¹˜ì¦ˆì¼€ì´í¬ ");
+						System.out.println("3. í‹°ë¼ë¯¸ìˆ˜ì¼€ì´í¬ ");
+						System.out.println("4. ë‹¹ê·¼ì¼€ì´í¬");
 
 						System.out.println();
-						System.out.print("¸Ş´º ¹øÈ£ ÀÔ·Â : ");
+						System.out.print("ë©”ë‰´ ë²ˆí˜¸ ì…ë ¥ : ");
 						menuNum = Integer.parseInt(sc.nextLine());
 						
 						int cf = sc.nextInt();
 						
 						if(cf == 1) {
-							cake = "ÃÊÄİ¸´ÄÉÀÌÅ©";
+							cake = "ì´ˆì½œë¦¿ì¼€ì´í¬";
 						}
 						else if(cf == 2) {
-							cake = "Ä¡ÁîÄÉÀÌÅ©";
+							cake = "ì¹˜ì¦ˆì¼€ì´í¬";
 						}
 						else if(cf == 3) {
-							cake = "Æ¼¶ó¹Ì¼öÄÉÀÌÅ©";
+							cake = "í‹°ë¼ë¯¸ìˆ˜ì¼€ì´í¬";
 						}
 						else if(cf == 4) {
-							cake = "´ç±ÙÄÉÀÌÅ©";
+							cake = "ë‹¹ê·¼ì¼€ì´í¬";
 						}
 						else {
-							System.out.println("ÄÉÀÌÅ© Á¾·ù¸¦ ´Ù½Ã ¼±ÅÃÇØÁÖ¼¼¿ä!");
+							System.out.println("ì¼€ì´í¬ ì¢…ë¥˜ë¥¼ ë‹¤ì‹œ ì„ íƒí•´ì£¼ì„¸ìš”!");
 							cake_bool = true;
 						}
 					}
 				}
 			}
-				else if(menuNum == '2') {
+				else if(menuNum == 2) {
 					String cookie = "";
 					while(cookie_bool) {
 						cookie_bool = false;
 					
 					while(true) {
-							System.out.println(" ¹«½¼ Á¾·ù·Î ÇÏ½Ã°Ú½À´Ï±î? ");
-							System.out.println("1. ¿ÀÆ®¹ĞÄíÅ°");
-							System.out.println("2. ¶óÁîº£¸®ÄíÅ° ");
-							System.out.println("3. ¿À·¹¿ÀÄíÅ° ");
-							System.out.println("4. ¹öÅÍÄíÅ°");
+							System.out.println(" ë¬´ìŠ¨ ì¢…ë¥˜ë¡œ í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ");
+							System.out.println("1. ì˜¤íŠ¸ë°€ì¿ í‚¤");
+							System.out.println("2. ë¼ì¦ˆë² ë¦¬ì¿ í‚¤ ");
+							System.out.println("3. ì˜¤ë ˆì˜¤ì¿ í‚¤ ");
+							System.out.println("4. ë²„í„°ì¿ í‚¤");
 
 							System.out.println();
-							System.out.print("¸Ş´º ¹øÈ£ ÀÔ·Â : ");
+							System.out.print("ë©”ë‰´ ë²ˆí˜¸ ì…ë ¥ : ");
 							menuNum = Integer.parseInt(sc.nextLine());
 							
 							int cf = sc.nextInt();
 							
 							if(cf == 1) {
-								cookie = "¿ÀÆ®¹ĞÄíÅ°";
+								cookie = "ì˜¤íŠ¸ë°€ì¿ í‚¤";
 							}
 							else if(cf == 2) {
-								cookie = "¶óÁîº£¸®ÄíÅ°";
+								cookie = "ë¼ì¦ˆë² ë¦¬ì¿ í‚¤";
 							}
 							else if(cf == 3) {
-								cookie = "¿À·¹¿ÀÄíÅ°";
+								cookie = "ì˜¤ë ˆì˜¤ì¿ í‚¤";
 							}
 							else if(cf == 4) {
-								cookie = "¹öÅÍÄíÅ°";
+								cookie = "ë²„í„°ì¿ í‚¤";
 							}
 							else {
-								System.out.println("ÄíÅ° Á¾·ù¸¦ ´Ù½Ã ¼±ÅÃÇØÁÖ¼¼¿ä!");
+								System.out.println("ì¿ í‚¤ ì¢…ë¥˜ë¥¼ ë‹¤ì‹œ ì„ íƒí•´ì£¼ì„¸ìš”!");
 								cookie_bool = true;
 							}
-						}//Æ¼ ¼±ÅÃ ³¡
+						}//í‹° ì„ íƒ ë
 						
 					}
-					}//if¹® ³¡
+					}//ifë¬¸ ë
 			}
 			}
 
