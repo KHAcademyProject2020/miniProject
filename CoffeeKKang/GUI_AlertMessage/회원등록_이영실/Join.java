@@ -18,6 +18,7 @@ public class Join extends JFrame{
 		setBounds(700,300,300,400);
 		setLayout(new GridLayout(0,1));
 		
+		
 		JLabel label1 = new JLabel("커피깡의 가족이 되어주세요!");
 		add(label1);
 		label1.setHorizontalAlignment(JLabel.CENTER);

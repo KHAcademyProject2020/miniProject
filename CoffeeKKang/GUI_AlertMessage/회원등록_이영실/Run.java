@@ -6,9 +6,7 @@ import com.kh.project.mini.cafe.view.gui.alarm.MainView;
 
 public class Run {
 	public static void main(String[] args) {
-//		new MainView();
-//		new Login();
-		new Join();
+		new MainView();
 		
 		
 	}
