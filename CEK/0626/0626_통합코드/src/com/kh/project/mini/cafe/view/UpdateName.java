@@ -12,7 +12,7 @@ import com.kh.project.mini.cafe.controller.MemberController;
 import com.kh.project.mini.cafe.model.vo.Member;
 import com.kh.project.mini.cafe.view.UpdatePassword.GoMyPageListener;
 
-// ÀÌ¸§º¯°æÇÏ´Â GUI
+// ì´ë¦„ë³€ê²½í•˜ëŠ” GUI
 public class UpdateName extends JPanel{
 	private MemberController mc = new MemberController();
 	private MainFrame mf;
@@ -21,35 +21,35 @@ public class UpdateName extends JPanel{
 	private Member me;
 	
 	public UpdateName(MainFrame mf, String id, Member me) {
-		// ·Î±×ÀÎ¼º°øÇÒ¶§ ¾ÆÀÌµð(HashMap- key)¿Í
-		// Member°´Ã¼(HashMap- value)¸¦
-		// ¸Å°³º¯¼ö·Î ÇÑ´Ù.
+		// ë¡œê·¸ì¸ì„±ê³µí• ë•Œ ì•„ì´ë””(HashMap- key)ì™€
+		// Memberê°ì²´(HashMap- value)ë¥¼
+		// ë§¤ê°œë³€ìˆ˜ë¡œ í•œë‹¤.
 		this.mf=mf;
 		this.id=id;
 		this.me=me;
 		System.out.println("id: "+ this.id+ "me:"+ this.me);
 		
-		mf.setTitle("ÀÌ¸§ º¯°æ");
+		mf.setTitle("ì´ë¦„ ë³€ê²½");
 		
-		// 1. (ºÏ) ÇÁ·¹ÀÓ¿¡ Å¸ÀÌÆ² ¶óº§À» ³Ö´Â´Ù.
-		JLabel title = new JLabel("ÀÌ¸§À» º¯°æÇØÁÖ¼¼¿ä.");
+		// 1. (ë¶) í”„ë ˆìž„ì— íƒ€ì´í‹€ ë¼ë²¨ì„ ë„£ëŠ”ë‹¤.
+		JLabel title = new JLabel("ì´ë¦„ì„ ë³€ê²½í•´ì£¼ì„¸ìš”.");
 		title.setHorizontalAlignment(JLabel.CENTER);
 		this.add(title, "North");
 
-		// 2. (Áß¾Ó) ÇÁ·¹ÀÓ¿¡ ±×¸®µå·¹ÀÌ¾Æ¿ôÀÎ ÆÐ³ÎÀ» ³Ö´Â´Ù.
+		// 2. (ì¤‘ì•™) í”„ë ˆìž„ì— ê·¸ë¦¬ë“œë ˆì´ì•„ì›ƒì¸ íŒ¨ë„ì„ ë„£ëŠ”ë‹¤.
 		JPanel newNamePanel = new JPanel();
-		newNamePanel.add(new JLabel("º¯°æÇÒ ÀÌ¸§ ÀÔ·Â"));
+		newNamePanel.add(new JLabel("ë³€ê²½í•  ì´ë¦„ ìž…ë ¥"));
 		JTextField newNameInput= new JTextField(25);
 		newNamePanel.add(newNameInput);
 		this.add(newNamePanel, "Center");
 		
-		//3. (³²) ¹öÆ° Å¬¸¯
-		JButton submitButton= new JButton("ÀÌ¸§ º¯°æ");
+		//3. (ë‚¨) ë²„íŠ¼ í´ë¦­
+		JButton submitButton= new JButton("ì´ë¦„ ë³€ê²½");
 		add(submitButton, "Center");
-//		submitButton.addActionListener(new GoAfterLoginListener()); 
+		submitButton.addActionListener(new GoAfterLoginListener()); 
 	
-		//µ¹¾Æ°¡±â¹öÆ°»ý¼º => MyPage¸Þ´º Ã¢¶ç¿ì±â
-		JButton backButton = new JButton("ÀÌÀüÆäÀÌÁö·Î µ¹¾Æ°¡±â");
+		//ëŒì•„ê°€ê¸°ë²„íŠ¼ìƒì„± => MyPageë©”ë‰´ ì°½ë„ìš°ê¸°
+		JButton backButton = new JButton("ì´ì „íŽ˜ì´ì§€ë¡œ ëŒì•„ê°€ê¸°");
 		add(backButton, "Center");
 		backButton.addActionListener(new GoMyPageListener());
 		
@@ -57,7 +57,7 @@ public class UpdateName extends JPanel{
 		
 	}
 	
-	//µ¹¾Æ°¡±â ¹öÆ° ´©¸£¸é  MyPage·Î ³Ñ¾î°¡±â
+	//ëŒì•„ê°€ê¸° ë²„íŠ¼ ëˆ„ë¥´ë©´  MyPageë¡œ ë„˜ì–´ê°€ê¸°
 	class GoMyPageListener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -70,17 +70,17 @@ public class UpdateName extends JPanel{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//»õ·Î ÀÔ·ÂÇÑ ÀÌ¸§
+				//ìƒˆë¡œ ìž…ë ¥í•œ ì´ë¦„
 				String newName= newNameInput.getText();
 				if(newName.length() > 0) {
-					//»õ·Î ÀÔ·ÂÇÑ ÀÌ¸§ÀÌ ÃÖ¼Ò 1±ÛÀÚ ÀÌ»óÀÌ¶ó¸é
-					//¼º°ø¸Þ½ÃÁö
-					JOptionPane.showMessageDialog(null, "ÀÌ¸§ º¯°æ ¼º°ø!", "Ä¿ÇÇ±ø - ÀÌ¸§ º¯°æ(¼º°ø)", JOptionPane.PLAIN_MESSAGE);
+					//ìƒˆë¡œ ìž…ë ¥í•œ ì´ë¦„ì´ ìµœì†Œ 1ê¸€ìž ì´ìƒì´ë¼ë©´
+					//ì„±ê³µë©”ì‹œì§€
+					JOptionPane.showMessageDialog(null, "ì´ë¦„ ë³€ê²½ ì„±ê³µ!", "ì»¤í”¼ê¹¡ - ì´ë¦„ ë³€ê²½(ì„±ê³µ)", JOptionPane.PLAIN_MESSAGE);
 					mc.changeName(id,newName);
 					changePanel(new LoginAfter(mf, me));
 				}else {
-					//»õ·ÎÀÔ·ÂÇÑ ÀÌ¸§ÀÌ 1±ÛÀÚ ¹Ì¸¸ÀÌ¶ó¸é
-					JOptionPane.showMessageDialog(null, "ÃÖ¼Ò ÇÑ ±ÛÀÚ ÀÌ»óÀÇ ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä!", "Ä¿ÇÇ±ø - ÀÌ¸§ º¯°æ(½ÇÆÐ)", JOptionPane.ERROR_MESSAGE);
+					//ìƒˆë¡œìž…ë ¥í•œ ì´ë¦„ì´ 1ê¸€ìž ë¯¸ë§Œì´ë¼ë©´
+					JOptionPane.showMessageDialog(null, "ìµœì†Œ í•œ ê¸€ìž ì´ìƒì˜ ì´ë¦„ì„ ìž…ë ¥í•´ì£¼ì„¸ìš”!", "ì»¤í”¼ê¹¡ - ì´ë¦„ ë³€ê²½(ì‹¤íŒ¨)", JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		}
