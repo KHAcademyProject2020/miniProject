@@ -22,18 +22,18 @@ public class UpdateName extends JPanel {
 	private String id;
 	private Member me;
 	///////////////////////////////
-	
+
 	public UpdateName(MainFrame mf, String id, Member me) {
 		// 로그인성공할때 아이디(HashMap- key)와
 		// Member객체(HashMap- value)를
 		// 매개변수로 한다.
 		this.mf = mf;
-		
+
 		//추가//
 		this.id=id;
 		this.me=me;
 		//////
-		
+
 		mf.setTitle("커피깡 - 이름 변경");
 
 		// 1. (북) 프레임에 타이틀 라벨을 넣는다.
@@ -66,10 +66,13 @@ public class UpdateName extends JPanel {
 				JOptionPane.showMessageDialog(null, "이름 변경 성공!", "커피깡 - 이름 변경(성공)", JOptionPane.PLAIN_MESSAGE);
 				mc.changeName(id, newName);
 
+				//업데이트 시킨 객체를 받는다.-0625- 추가
+				me=mc.updateMemberInfo(id);
+
 				//(추가) 메인페이지로 이동.///////////////
 				changePanel(new LoginAfter(mf, me));
 				///////////////////////////////////
-				
+
 			} else {
 				// 새로입력한 이름이 1글자 미만이라면
 				JOptionPane.showMessageDialog(null, "최소 한 글자 이상의 이름을 입력해주세요!", "커피깡 - 이름 변경(실패)",
