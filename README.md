@@ -22,8 +22,8 @@
 
 
 > ## 결과물
-
-![](./coffee_kkang.mp4)
+>> ## 비밀번호 변경
+![](./coffee_kkang_password.gif)
 
 <br>
 
